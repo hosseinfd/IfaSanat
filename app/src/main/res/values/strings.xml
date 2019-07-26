@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">IFASanat</string>
+    <string name="user_name">نام کاربری</string>
+    <string name="password">رمز عبور</string>
+    <string name="login">ورود</string>
+    <string name="search">جست و جو</string>
+    <string name="owner">مالک</string>
+
+    <string name="phone_number">شماره سیم کارت</string>
+    <string name="meter_serial">شماره سریال کنتور</string>
+
+
+    <string name="installed_items">لیست نصب ها</string>
+    <string name="customers">لیست مشترکین</string>
+    <string name="customers_details">مشخصات مشترک</string>
+    <string name="add_well">افزودن چاه</string>
+    <string name="search_customer">فیلتر کردن</string>
+
+    <string name="well_detail">مشخصات چاه</string>
+    <string name="phone_detail">مشخصات سیم کارت</string>
+    <string name="installer_name">نام نصاب</string>
+    <string name="project_name">نام پروژه</string>
+    <string name="state">وضعیت</string>
+
+    <string name="installed_items_detail">مشاهده نصب</string>
+    <string name="well_number">شماره چاه</string>
+    <string name="polomp_numbers">شماره سریال پلمپ ها</string>
+    <string name="project_manager_name">نام مدیر پروژه</string>
+    <string name="time_receive_installer">تاریخ تحویل به نصاب</string>
+    <string name="install_time">تاریخ نصب</string>
+    <string name="tablo_detail">مشخصات تابلو</string>
+    <string name="tablo_has_breaker">تابلو قطع کن دارد؟</string>
+    <string name="price">مبلغ</string>
+    <string name="item_has_used">اقلام مصرفی دارد ؟</string>
+    <string name="description">توضیحات</string>
+    <string name="add_picture">اضافه کردن عکس</string>
+    <string name="save">ذخیره</string>
+    <string name="accept_install">تایید نصب</string>
+    <string name="reject_install">رد نصب</string>
+    <string name="add_customer">افزودن مشترک</string>
+    <string name="document_info">اطلاعات پرونده</string>
+    <string name="well_location">موقعیت چاه</string>
+    <string name="well_digging_info">مشخصات حفر چاه</string>
+    <string name="file_class">کلاسه پرونده</string>
+    <string name="StateOfUse">وضعیت بهره برداری</string>
+    <string name="TwelveDigitsCode">کد 13 رقمی</string>
+    <string name="GlobalAuthenticationCode">کد شناسایی سراسری</string>
+    <string name="UtmX">UtmX</string>
+    <string name="UtmY">UtmY</string>
+    <string name="Province">استان</string>
+    <string name="City">شهر</string>
+    <string name="Village">روستا</string>
+    <string name="State">بخش</string>
+    <string name="RegionName">نام محدوده</string>
+    <string name="RegionCode">کد محدوده</string>
+    <string name="PlainName">نام دشت</string>
+    <string name="DiggingNumber">شماره مجوز حفر</string>
+    <string name="DiggingMoment">تاریخ صدور مجوز</string>
+    <string name="DiggingCrookiNumber">شماره کروکی</string>
+    <string name="DiggingCrookiMoment">تاریخ کروکی</string>
+    <string name="DiggingType">نوع حفاری</string>
+    <string name="DiggingWellDepth">عمق حفاری(متر)</string>
+    <string name="DiggingDiameterInMeters">قطر حفاری(متر)</string>
+    <string name="DiggingPipeWorkDiameterInMeters">قطر لوله جدار(متر)</string>
+    <string name="PipeWorkMaterial">جنس لوله جدار</string>
+    <string name="LatticePipeLongInMeters">طول لوله مشبک(متر)</string>
+    <string name="LatticePipeFromInMeters">از عمق(متر)</string>
+    <string name="LatticePipeToInMeters">تا عمق(متر)</string>
+    <string name="WaterTouchedInDepthInMeters">سطح برخورد به آب حین حفاری(متر)</string>
+    <string name="StaticDepthAsFinishingPipingInMeters">سطح استاتیک آب در پایان لوله گذاری(متر)</string>
+    <string name="DiggingStartMoment">تاریخ شروع عملیات حفاری</string>
+    <string name="DiggingFinishMoment">تاریخ پایان عملیات حفاری</string>
+    <string name="DiggingCompanyName">نام شرکت حفاری</string>
+    <string name="DiggingEngineerName">نام مهندس ناظر حفاری</string>
+    <string name="UsageNumber">شماره پروانه</string>
+    <string name="UsageMoment">تاریخ پروانه</string>
+    <string name="UsageWellDepth">عمق چاه(متر)</string>
+    <string name="UsageWaterFlowPipeDiametersInMeters">قطر لوله آبنده(متر)</string>
+    <string name="PumpInstallationDepth">عمق نصب پمپ</string>
+    <string name="ElectricitySubscriptionNumber">شماره اشتراک برق</string>
+    <string name="ElectricitySubscriptionIdentifier">شماره شناسایی برق</string>
+    <string name="DrivingForce">نیروی محرکه</string>
+    <string name="PumpType">نوع پمپ</string>
+    <string name="UsageType">نوع مصرف</string>
+    <string name="LandArea">مساحت اراضی(هکتار)</string>
+    <string name="MaxExtractionInLitersPerSecond">حداکثر میزان بهره برداری(لیتر بر ثانیه)</string>
+    <string name="MaxExtractionInCubicMetersPerDay">حداکثر میزان بهره برداری(متر مکعب در روز)</string>
+    <string name="MaxExtractionInCubicMetersPerYear">حداکثر میزان بهره برداری(مترمکعب در سال)</string>
+    <string name="MaxPowerOfMotorInKiloWats">حداکثرقدرت مجاز موتور(کیوات)</string>
+    <string name="UptimeHoursPerYear">مدت کارکرد در سال(ساعت)</string>
+    <string name="hagigig_information">اطلاعات حقیقی</string>
+
+    <string name="FirstName">نام</string>
+    <string name="LastName">نام خانوادگی</string>
+    <string name="CompanyName">نام شرکت</string>
+    <string name="FathersName">نام پدر</string>
+    <string name="RegisteredAt">صادره از</string>
+    <string name="CompanyNationalNumber">کد ملی شرکت</string>
+    <string name="CompanyRegisterNumber">شماره ثبت</string>
+    <string name="CompanyEconomicalNumber">کد اقتصادی</string>
+    <string name="NationalNumber">کد ملی</string>
+    <string name="ShenasnameNumber">شماره شناسنامه</string>
+    <string name="Addresses">آدرس</string>
+    <string name="hugugi_information">اطلاعات حقوقی</string>
+    <string name="add_costumer">ثبت مشترک</string>
+    <string name="BirthDate">تاریخ تولد</string>
+    <string name="Address">آدرس</string>
+    <string name="install_number">شماره نصب</string>
+    <string name="fastSearch">جست و جو سریع</string>
+
+
+    <string name="not_found">موردی یافت نشد</string>
+    <string name="PostCode">کد پستی</string>
+    <string name="Fax">فکس</string>
+    <string name="phone">تلفن</string>
+    <string name="fillParam">لطفا اطلاعات را بازبینی کنید</string>
+    <string name="meter_type">نوع کنتور</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_change">ذخیره تغیرات</string>
+    <string name="show_well">مشاهده چاه</string>
+    <string name="add_install">اضافه کردن نصب</string>
+    <string name="accept_delete_image">آیا از پاک کردن این عکس مطمئن هستید؟</string>
+    <string name="accept_delete_plump">آیا از پاک کردن این شماره پملپ مطمئن هستید؟</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="show_image">مشاهده عکس</string>
+    <string name="confirm_exit">می خواهید از حساب کاربری خود خارج شوید؟</string>
+    <string name="customers_details_change">ویرایش مشترک</string>
+    <string name="well_address">آدرس چاه</string>
+    <string name="well_owner">مالک چاه</string>
+    <string name="network_state">وضعیت شبکه</string>
+    <string name="successfulInstall">نصب با موفقیت انجام شد</string>
+    <string name="successfulEdit">تغییرات با موفقیت انجام شد</string>
+    <string name="completeSn_PhoneNumber">لطفا شماره سریال کنتور یا شماره سیم کارت  را وارد کنید</string>
+    <string name="imageNotSupport">فرمت عکس پشتیبانی نمی شود</string>
+    <string name="usernameOrPasswordWrong">نام کاربری یا رمز عبور اشتباه است</string>
+    <string name="usernameOrPasswordCantBeEmpty">نام کاربری یا رمز عبور را پر کنید</string>
+    <string name="changed_saved">تغیرات ثبت شد</string>
+    <string name="add_customer_done">مشترک ثبت شد</string>
+    <string name="try_again_later">لطفا کمی بعد تلاش کنید</string>
+    <string name="picture_list">لیست تصاویر</string>
+    <string name="wizardPage">فراید نصب</string>
+
+</resources>

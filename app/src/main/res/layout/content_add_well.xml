@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_add_well"
+    android:layout_marginBottom="@dimen/margin_50dp">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:theme="@style/CardViewStyleAddWell">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textDocumentInformation"
+                    android:background="@drawable/fill_boarder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/document_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/TextViewMargin" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/FileClassLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/file_class"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/FileClass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+
+                        android:nextFocusDown="@+id/StateOfUse"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/StateOfUseLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/StateOfUse"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/StateOfUse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+
+                        android:nextFocusDown="@+id/TwelveDigitsCode"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TwelveDigitsCodeLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/TwelveDigitsCode"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/TwelveDigitsCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+
+                        android:nextFocusDown="@id/GlobalAuthenticationCode"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/GlobalAuthenticationCodeLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/GlobalAuthenticationCode"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/GlobalAuthenticationCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+
+                        android:nextFocusDown="@id/UtmX"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:theme="@style/CardViewStyleAddWell">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textWellLocation"
+                    android:background="@drawable/fill_boarder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/well_location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/TextViewMargin" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/UtmXLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/UtmX"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/UtmX"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+
+                        android:nextFocusDown="@id/UtmY"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/UtmYLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/UtmY"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/UtmY"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+
+                        android:nextFocusDown="@id/Province"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ProvinceLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/Province"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/Province"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+
+                        android:nextFocusDown="@id/City"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/CityLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/City"
+                    android:theme="@style/CustomTextInputLayout">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/City"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+
+                        android:nextFocusDown="@id/Village"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/VillageLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/Village"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/Village"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+
+                        android:nextFocusDown="@id/State"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/StateLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/State"
+                    android:theme="@style/CustomTextInputLayout">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/State"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/RegionNameLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/RegionName"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/RegionName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/RegionCodeLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/RegionCode"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/RegionCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/PlainNameLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/PlainName"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/PlainName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:theme="@style/CardViewStyleAddWell">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textDigging"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/well_digging_info"
+                    android:textColor="@color/black"
+                    android:background="@drawable/fill_boarder"
+                    android:textSize="@dimen/TextViewMargin" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DiggingNumberLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DiggingNumber"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DiggingNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DiggingMomentLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DiggingMoment"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DiggingMoment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DiggingCrookiNumberLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DiggingCrookiNumber"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DiggingCrookiNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DiggingCrookiMomentLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DiggingCrookiMoment"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DiggingCrookiMoment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DiggingTypeLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DiggingType"
+                    android:theme="@style/CustomTextInputLayout">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DiggingType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DiggingWellDepthLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DiggingWellDepth"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DiggingWellDepth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DiggingDiameterInMetersLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DiggingDiameterInMeters"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DiggingDiameterInMeters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DiggingPipeWorkDiameterInMetersLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DiggingPipeWorkDiameterInMeters"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DiggingPipeWorkDiameterInMeters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/PipeWorkMaterialLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/PipeWorkMaterial"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/PipeWorkMaterial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/LatticePipeLongInMetersLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/LatticePipeLongInMeters"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/LatticePipeLongInMeters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/LatticePipeFromInMetersLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/LatticePipeFromInMeters"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/LatticePipeFromInMeters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/LatticePipeToInMetersLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/LatticePipeToInMeters"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/LatticePipeToInMeters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/WaterTouchedInDepthInMetersLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/WaterTouchedInDepthInMeters"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/WaterTouchedInDepthInMeters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/StaticDepthAsFinishingPipingInMetersLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/StaticDepthAsFinishingPipingInMeters"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/StaticDepthAsFinishingPipingInMeters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DiggingStartMomentLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DiggingStartMoment"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DiggingStartMoment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DiggingFinishMomentLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DiggingFinishMoment"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DiggingFinishMoment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DiggingCompanyNameLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DiggingCompanyName"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DiggingCompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DiggingEngineerNameLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DiggingEngineerName"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DiggingEngineerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:theme="@style/CardViewStyleAddWell">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textWellLocation1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/well_location"
+                    android:textColor="@color/black"
+                    android:background="@drawable/fill_boarder"
+                    android:textSize="@dimen/TextViewMargin" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/UsageNumberLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/UsageNumber"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/UsageNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/UsageMomentLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/UsageMoment"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/UsageMoment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/UsageWellDepthLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/UsageWellDepth"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/UsageWellDepth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/UsageWaterFlowPipeDiametersInMetersLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/UsageWaterFlowPipeDiametersInMeters"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/UsageWaterFlowPipeDiametersInMeters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/PumpInstallationDepthLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/PumpInstallationDepth"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/PumpInstallationDepth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ElectricitySubscriptionNumberLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/ElectricitySubscriptionNumber"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ElectricitySubscriptionNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ElectricitySubscriptionIdentifierLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/ElectricitySubscriptionIdentifier"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ElectricitySubscriptionIdentifier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/DrivingForceLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/DrivingForce"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/DrivingForce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/PumpTypeLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/PumpType"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/PumpType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/UsageTypeLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/UsageType"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/UsageType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/LandAreaLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/LandArea"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/LandArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/MaxExtractionInLitersPerSecondLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/MaxExtractionInLitersPerSecond"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/MaxExtractionInLitersPerSecond"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/MaxExtractionInCubicMetersPerDayLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/MaxExtractionInCubicMetersPerDay"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/MaxExtractionInCubicMetersPerDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/MaxExtractionInCubicMetersPerYearLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/MaxExtractionInCubicMetersPerYear"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/MaxExtractionInCubicMetersPerYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/MaxPowerOfMotorInKiloWatsLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/MaxPowerOfMotorInKiloWats"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/MaxPowerOfMotorInKiloWats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/UptimeHoursPerYearLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/UptimeHoursPerYear"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/UptimeHoursPerYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+

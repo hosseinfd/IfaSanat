@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    tools:context=".Dialog.NetworkStateNumberPickerFragment">
+
+    <LinearLayout
+        android:id="@+id/liner_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_number_picker_network_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="@dimen/fab_margin"
+            android:text="وضعیت شبکه" />
+
+        <NumberPicker
+            android:id="@+id/numberPickerNetworkState"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_set_network_state"
+        android:text="ثبت وضعیت شبکه"
+        android:textColor="@color/white"
+        android:background="@drawable/button_simple_shape"
+        android:layout_below="@+id/liner_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+</RelativeLayout>

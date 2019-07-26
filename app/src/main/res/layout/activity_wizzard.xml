@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WizardActivity">
+
+    <!--toolbar section-->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/toolbar_backward_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_action_navigation_arrow_back_inverted" />
+
+                <TextView
+                    android:id="@+id/toolbar_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    tools:text="@string/user_name" />
+
+                <ImageView
+                    android:id="@+id/image_popup_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_more_vert_white_24dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--view section-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:clipToPadding="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/button_color"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageButton
+                android:id="@+id/image_button_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:padding="10dp"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+
+
+            <TextView
+                android:id="@+id/text_view_pagination"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                tools:text="3/5" />
+
+
+            <ImageButton
+                android:id="@+id/image_button_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:padding="10dp"
+                android:src="@drawable/ic_arrow_forward_white_24dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

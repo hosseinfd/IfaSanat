@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WizardFragments.WizardCaptureImageFragment">
+
+
+    <ImageView
+        android:id="@+id/image_view_capture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:src="@drawable/logo" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="48dp">
+
+        <ImageView
+            android:id="@+id/image_view_capture_empty"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            tools:src="@drawable/ic_cloud_upload_black_24dp" />
+
+        <Button
+            android:id="@+id/text_view_capture_empty"
+            android:layout_width="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/image_view_capture_empty"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@drawable/capture_button_shape"
+            android:text="بارگذاری تصویر"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:elevation="20dp"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

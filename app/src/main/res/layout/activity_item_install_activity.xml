@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".Activities.ItemInstallActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_color"
+                app:contentInsetEnd="0dp"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/toolbar_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        tools:text="@string/user_name" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ic_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_menu_white_24dp" />
+
+                <ImageView
+                    android:id="@+id/image_view_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/ic_search_white_24dp" />
+
+                <ImageView
+                    android:id="@+id/image_view_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/image_view_search"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/ic_notifications_active_white_24dp" />
+
+            </RelativeLayout>
+
+            <com.miguelcatalan.materialsearchview.MaterialSearchView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search"/>
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <!--content of this page-->
+    <include layout="@layout/content_installed_items"
+
+        />
+    <!--content of float ActionButton-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/fab_background"
+            android:visibility="visible"
+            app:backgroundTint="@color/button_color"
+            app:elevation="4dp"
+            app:fabSize="mini"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/ic_add_white_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/fab_background"
+            android:visibility="visible"
+            app:backgroundTint="@color/button_color"
+            app:elevation="4dp"
+            app:fabSize="mini"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/ic_filter_list_white_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/fab_background"
+            app:backgroundTint="@color/button_color"
+            app:borderWidth="1dp"
+            app:elevation="2dp"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/ic_more_vert_white_24dp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="@dimen/fab_margin" />
+</android.support.design.widget.CoordinatorLayout>

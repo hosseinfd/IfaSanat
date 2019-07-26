@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="standard_55">55dp</dimen>
+    <dimen name="standard_105">105dp</dimen>
+    <dimen name="standard_155">155dp</dimen>
+    <dimen name="margin_text_view">15dp</dimen>
+    <dimen name="line_height">18dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+
+    <dimen name="TextViewMargin">16dp</dimen>
+    <dimen name="installation_card_dimens">4dp</dimen>
+</resources>

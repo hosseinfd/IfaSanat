@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_add_costumer"
+    android:layout_marginBottom="@dimen/margin_50dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:theme="@style/CardViewStyleAddWell">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/textUserInformation"
+                    android:background="@drawable/fill_boarder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/hagigig_information"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/TextViewMargin" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/FirstNameLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/FirstName"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/FirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/LastNameLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/LastName"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/LastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/FathersNameLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/FathersName"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/FathersName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/BirthDateLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/BirthDate"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/BirthDate"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/RegisteredAtLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/RegisteredAt"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/RegisteredAt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ShenasnameNumberLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/ShenasnameNumber"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ShenasnameNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/NationalNumberLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/NationalNumber"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/NationalNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/AddressLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/Address"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/PostCodeLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/PostCode"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/PostCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/PhoneLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/phone"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/Phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/FaxLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/Fax"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/Fax"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/PhoneNumberLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/phone_number"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/PhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:theme="@style/CardViewStyleAddWell">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/textCompanyInformation"
+                    android:background="@drawable/fill_boarder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/hugugi_information"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/TextViewMargin" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/CompanyNameLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/CompanyName"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/CompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/CompanyNationalNumberLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/CompanyNationalNumber"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/CompanyNationalNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/CompanyRegisterNumberLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/CompanyRegisterNumber"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/CompanyRegisterNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/CompanyEconomicalNumberLay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:textColorHint="@color/textColorHint"
+                    android:hint="@string/CompanyEconomicalNumber"
+                    android:theme="@style/CustomTextInputLayout">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/CompanyEconomicalNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

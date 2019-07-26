@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/CardViewStyle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/liner_main"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/liner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/recycler_view_text_view_phone_define"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/text_view_defines"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recycler_view_text_view_phone"
+                    tools:text="09141603298"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:padding="@dimen/installation_card_dimens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/recycler_view_text_view_owner_define"
+                    android:text="@string/owner"
+                    android:textColor="@color/text_view_defines"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/recycler_view_text_view_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="@dimen/installation_card_dimens"
+                android:ellipsize="marquee"
+                android:maxLength="15"
+                tools:text=" اکبری"
+                android:textColor="@color/black" />
+            </LinearLayout>
+            <View
+                android:background="@color/line_color"
+                android:layout_marginTop="8dp"
+                android:layout_weight=".1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/liner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/recycler_view_textView_kontur_define"
+                android:text="@string/meter_serial"
+                android:textColor="@color/text_view_defines"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/recycler_view_text_view_kontur"
+                tools:text="1197020767"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_margin="6dp"
+                android:padding="@dimen/installation_card_dimens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/recycler_view_text_view_install_time_define"
+                android:text="@string/install_time"
+                android:textColor="@color/text_view_defines"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/recycler_view_text_view_install_time"
+                tools:text="1397/08/19"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_margin="6dp"
+                android:padding="@dimen/installation_card_dimens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+            <View
+                android:background="@color/line_color"
+                android:layout_marginTop="8dp"
+                android:layout_weight=".1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"/>
+        <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@+id/liner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/recycler_view_textView_install_number_define"
+                    android:text="@string/install_number"
+                    android:textColor="@color/text_view_defines"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recycler_view_text_view_install_number"
+                    tools:text="16888"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:padding="@dimen/installation_card_dimens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/recycler_view_text_view_situation_define"
+                    android:text="@string/state"
+                    android:textColor="@color/text_view_defines"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recycler_view_text_view_situation"
+                    tools:text="تاید شده"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/installation_card_dimens"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/recycler_view_text_view_address_define"
+           android:layout_alignParentRight="true"
+            android:layout_below="@+id/liner_main"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Address"
+            android:textColor="@color/text_view_defines"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/recycler_view_text_view_address"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/recycler_view_text_view_address_define"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="8dp"
+            tools:text="ادرس تستی برای بررسی چاه با مشخصات"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/recycler_view_button_see_details"
+            android:layout_below="@+id/recycler_view_text_view_address"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:text="مشاهده"
+            android:textColor="@color/white"
+            android:background="@drawable/button_recycler_view_see_details"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

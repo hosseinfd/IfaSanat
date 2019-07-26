@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_install_item_details">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_save_data">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_meter_serial"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_meter_serial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/barcode"
+                    android:drawablePadding="30dp"
+                    android:gravity="right"
+                    android:hint="@string/meter_serial"
+                    android:inputType="number"
+                    android:nextFocusDown="@+id/edit_text_phone_number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textColorHint"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_meter_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout"
+                app:boxBackgroundColor="#F1F1F1"
+                app:boxBackgroundMode="filled"
+                app:boxStrokeColor="@color/black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_view_meter_type_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:hint="@string/meter_type"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textColorHint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_well_owner"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout"
+                app:boxBackgroundColor="#F1F1F1"
+                app:boxBackgroundMode="filled"
+                app:boxStrokeColor="@color/black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_well_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:hint="@string/well_owner"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#9B9191" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_well_address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout"
+                app:boxBackgroundColor="#F1F1F1"
+                app:boxBackgroundMode="filled"
+                app:boxStrokeColor="@color/black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_well_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:hint="@string/well_address"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#9B9191" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_installer_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:backgroundTintMode="add"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout"
+                app:boxBackgroundColor="#F1F1F1"
+                app:boxBackgroundMode="filled"
+                app:boxStrokeColor="@color/black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_installer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:hint="@string/installer_name"
+                    android:textColor="@color/black"
+                    android:textColorHint="#9B9191" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_phone_detail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/phone_detail"
+                    android:inputType="number"
+                    android:nextFocusDown="@+id/edit_text_polomp_number"
+                    android:textColorHint="#9B9191" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_polomp_number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_polomp_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:backgroundTint="@color/black"
+                    android:foregroundGravity="right"
+
+                    android:gravity="right"
+                    android:hint="@string/polomp_numbers"
+                    android:imeOptions="actionGo"
+                    android:textColorHint="@color/textColorHint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                tools:itemCount="2" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_manager_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_manager_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/project_manager_name"
+                    android:textColorHint="#9B9191" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_time_receiver_installer"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_time_receiver_installer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right"
+                    android:hint="@string/time_receive_installer"
+                    android:inputType="date"
+                    android:textColorHint="#9B9191" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_install_time"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_install_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right"
+                    android:hint="@string/install_time"
+                    android:inputType="number"
+                    android:textColorHint="#9B9191" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_project_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_project_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/project_name"
+                    android:textColorHint="#9B9191" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_tablo_details"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_tablo_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/tablo_detail"
+                    android:textColorHint="#9B9191" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_tablo_has_breaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/accepted_color"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/text_view_tablo_has_breaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/tablo_has_breaker"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_price"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/price"
+                    android:inputType="number"
+                    android:textColorHint="#9B9191" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_network_state"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_network_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right"
+                    android:hint="@string/network_state"
+                    android:inputType="date"
+                    android:textColorHint="#9B9191" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:gravity="right">
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_item_has_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/accepted_color"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/text_view_item_has_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/item_has_used"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_view_description"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textColorHint="@color/textColorHint"
+                android:theme="@style/CustomTextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_text_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/description"
+                    android:textColorHint="#9B9191" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/text_view_picture_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin_8dp"
+                android:text="@string/picture_list"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/button_wizard"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_8dp"
+                android:background="@drawable/capture_button_shape"
+                android:elevation="20dp"
+                android:paddingLeft="@dimen/fab_margin"
+                android:paddingRight="@dimen/fab_margin"
+                android:text="@string/wizardPage"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/button_add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_simple_shape"
+                android:backgroundTint="@color/button_color"
+                android:src="@drawable/ic_photo_camera_white_24dp"
+                android:text="@string/wizardPage"
+                app:borderWidth="0dp" />
+
+            <android.support.v7.widget.CardView
+                style="@style/CardViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewCaptures"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+    <ProgressBar
+    android:id="@+id/progress_bar"
+    android:visibility="gone"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button_save_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_simple_shape"
+        android:text="@string/save"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

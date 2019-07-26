@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/CardViewStyle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/liner_main"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/liner3"
+                android:weightSum="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/recycler_view_text_view_twelve_code_define"
+                    android:text="کد 12 رقمی"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recycler_view_text_view_twelve_code"
+                    android:text="09141603298"
+                    android:maxLines="1"
+                    android:maxLength="12"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/recycler_view_text_view_village_define"
+                    android:text="روستا"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recycler_view_text_view_village"
+                    android:text="آقای اکبری"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/recycler_view_button_see_details"
+                    android:layout_margin="8dp"
+                    android:text="مشاهده"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_recycler_view_see_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp" />
+            </LinearLayout>
+            <View
+                android:background="@color/line_color"
+                android:layout_marginTop="8dp"
+                android:layout_width="1dp"
+                android:layout_height="100dp"/>
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/liner2"
+                android:weightSum="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/recycler_view_textView_utmy_define"
+                    android:text="utmy"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recycler_view_text_view_utmy"
+                    android:text="1197020767"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/recycler_view_text_view_city_define"
+                    android:text="شهر"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recycler_view_text_view_city"
+                    android:text="1397/08/19"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/recycler_view_button_add_install_well"
+                    android:layout_margin="8dp"
+                    android:text="اضافه کردن نصب"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_buton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp" />
+
+            </LinearLayout>
+            <View
+                android:background="@color/line_color"
+                android:layout_marginTop="8dp"
+                android:layout_width="1dp"
+                android:layout_height="100dp"/>
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@+id/liner1"
+                android:weightSum="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/recycler_view_text_view_utmx_define"
+                    android:text="utmx"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recycler_view_text_view_utmx"
+                    android:text="16888"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/recycler_view_text_view_ostan_define"
+                    android:text="استان"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recycler_view_text_view_ostan"
+                    android:text="تاید شده"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/recycler_view_text_view_city_part_define"
+                    android:text="بخش"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/recycler_view_text_view_city_part"
+                    android:text="ندارد"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

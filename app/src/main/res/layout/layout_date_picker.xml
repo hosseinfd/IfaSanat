@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+   >
+
+    <LinearLayout
+        android:id="@+id/liner_main"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_number_picker_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="@dimen/fab_margin"
+                android:text="سال" />
+
+            <NumberPicker
+                android:id="@+id/numberPickerYear"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_number_picker_month"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="@dimen/fab_margin"
+                android:text="ماه" />
+
+            <NumberPicker
+                android:id="@+id/numberPickerMonth"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_number_picker_day"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="@dimen/fab_margin"
+                android:text="روز" />
+
+            <NumberPicker
+                android:id="@+id/numberPickerDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+   <Button
+       android:id="@+id/button_set_date"
+       android:text="ثبت تاریخ"
+       android:textColor="@color/white"
+       android:background="@drawable/button_simple_shape"
+       android:layout_below="@+id/liner_main"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"/>
+
+
+
+
+</RelativeLayout>
