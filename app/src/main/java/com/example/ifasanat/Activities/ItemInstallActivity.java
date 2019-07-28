@@ -24,7 +24,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.OvershootInterpolator;
@@ -67,6 +66,7 @@ public class ItemInstallActivity extends AppCompatActivity implements Navigation
     private ConnectivityListener connectivityListener;
     private Snackbar connectivityMessageSnackBar;
 
+    private TextView textNavHeader, textMenuAddUser, textMenuNotification, textMenuSetting, textMenuFilter,textMenuChangePassword, textMenuExit;
 
     @Override
     protected void onStop() {
@@ -87,8 +87,7 @@ public class ItemInstallActivity extends AppCompatActivity implements Navigation
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item_install_drawer_layout);
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "iransanslight.ttf");
-        init(typeface);
+        init();
 
         setSupportActionBar(toolbar);
         fabAddCustomer.setAlpha(0f);
@@ -133,15 +132,15 @@ public class ItemInstallActivity extends AppCompatActivity implements Navigation
             }
         });
 
-        imageMenu.setOnClickListener( v -> showDrawerMenu() );
+        imageMenu.setOnClickListener(v -> showDrawerMenu());
 
         navigationView.setNavigationItemSelectedListener(this);
 
     }
 
 
-    private void init(Typeface typeface) {
-
+    private void init() {
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "iransanslight.ttf");
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         fabMain = findViewById(R.id.fab);
@@ -154,14 +153,39 @@ public class ItemInstallActivity extends AppCompatActivity implements Navigation
         recyclerView = findViewById(R.id.recyclerView);
         toolbarText = findViewById(R.id.toolbar_text_view);
         progressBar = findViewById(R.id.progress_bar);
-        toolbarText.setTypeface(typeface);
-        toolbarText.setText(R.string.installed_items);
-
         coordinatorLayout = findViewById(R.id.coordinator);
+        textNavHeader = findViewById(R.id.text_view_navigation_header);
+        textMenuAddUser = findViewById(R.id.text_view_navigation_menu_add_user);
+        textMenuNotification = findViewById(R.id.text_view_navigation_menu_notification);
+        textMenuSetting = findViewById(R.id.text_view_navigation_menu_setting);
+        textMenuFilter = findViewById(R.id.text_view_navigation_menu_filter);
+        textMenuChangePassword = findViewById(R.id.text_view_navigation_menu_change_password);
+        textMenuExit = findViewById(R.id.text_view_navigation_menu_exit);
+        toolbarText.setText(R.string.installed_items);
+        setTypeFace(typeface);
 
         apiService = new ApiService(ItemInstallActivity.this);
         sharedPrefManager = new UserSharedPrefManager(this);
 
+    }
+
+    private void setTypeFace(Typeface typeface) {
+        toolbarText.setTypeface(typeface);
+
+        textMenuAddUser.setText("افزودن مشترک");
+        textMenuNotification.setText("اعلان ها");
+        textMenuSetting.setText("تنظیمات");
+        textMenuFilter.setText("فیلتر");
+        textMenuChangePassword.setText("تعویض رمز ورود");
+        textMenuExit.setText("خروج از حساب کاربری");
+
+        textNavHeader.setTypeface(typeface);
+        textMenuAddUser.setTypeface(typeface);
+        textMenuNotification.setTypeface(typeface);
+        textMenuSetting.setTypeface(typeface);
+        textMenuFilter.setTypeface(typeface);
+        textMenuChangePassword.setTypeface(typeface);
+        textMenuExit.setTypeface(typeface);
     }
 
     private void getDataFromServer() {
@@ -231,10 +255,10 @@ public class ItemInstallActivity extends AppCompatActivity implements Navigation
     }
 
     private void showDrawerMenu() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START);
+        if (drawerLayout.isDrawerOpen(GravityCompat.END)) {
+            drawerLayout.closeDrawer(GravityCompat.END);
         } else {
-            drawerLayout.openDrawer(Gravity.START);
+            drawerLayout.openDrawer(GravityCompat.END);
         }
     }
 
@@ -259,7 +283,7 @@ public class ItemInstallActivity extends AppCompatActivity implements Navigation
         switch (menuItem.getItemId()) {
 
             case R.id.menu_add_user:
-                startActivity(new Intent(ItemInstallActivity.this ,AddCustomerActivity.class));
+                startActivity(new Intent(ItemInstallActivity.this, AddCustomerActivity.class));
                 break;
 
             case R.id.menu_notification:
@@ -267,12 +291,12 @@ public class ItemInstallActivity extends AppCompatActivity implements Navigation
                 break;
 
             case R.id.menu_setting:
-                startActivity(new Intent(ItemInstallActivity.this ,FilterActivity.class));
+                startActivity(new Intent(ItemInstallActivity.this, FilterActivity.class));
                 break;
 
 
             case R.id.menu_filter:
-                startActivity(new Intent(ItemInstallActivity.this ,FilterActivity.class));
+                startActivity(new Intent(ItemInstallActivity.this, FilterActivity.class));
                 break;
 
             case R.id.menu_exit:

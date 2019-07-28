@@ -5,19 +5,25 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:openDrawer="start">
+    tools:openDrawer="right">
 
 
-    <include
-        layout="@layout/activity_item_install_activity"/>
+    <include layout="@layout/activity_item_install_activity" />
 
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:menu="@menu/menu_setting" />
+        android:layout_gravity="right"
+        app:elevation="@dimen/chip_open_elevation"
+        app:headerLayout="@layout/item_install_drawer_header"
+        >
+
+    <include
+        layout="@layout/item_install_drawer_header"/>
+
+    </android.support.design.widget.NavigationView>
 
 
 </android.support.v4.widget.DrawerLayout>

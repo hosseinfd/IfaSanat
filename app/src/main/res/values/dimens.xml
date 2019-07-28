@@ -14,4 +14,5 @@
 
     <dimen name="TextViewMargin">16dp</dimen>
     <dimen name="installation_card_dimens">4dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
 </resources>
